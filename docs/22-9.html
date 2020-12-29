@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tramite de Documentos</title>
+</head>
+<body style="background-color: cornflowerblue; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;">
+<form action="registrardatos.php" method="post">
+
+<fieldset style="border-color:black; width:500px;">
+<legend align="center">SOLICITUD DE TURNO EN LINEA</legend>
+Selecciona tu provincia:
+<select name="prov">
+    <option>Seleccione</option>
+<option value="1">Salta</option>
+<option value="2">Tucuman</option>
+<option value="3">Jujuy</option>
+</select>
+<br>
+<br>
+Selecciona Localidad:
+<select name="localidad">
+    <option>Seleccione</option>
+<option value="1" >San Miguel de Tucuman</option>
+<option value="2" >Yerba Buena</option>
+<option value="3" >La Cocha</option>
+</select>
+<br><br>
+Que desea tramitar:
+<select name="tramite">
+    <option>Seleccione</option>
+<option value="1">DNI</option>
+<option value="2">Pasaporte</option>
+<option value="3">Acta de Nacimiento</option>
+</select>
+</fieldset>
+<fieldset style="border-color:black; width:500px;">
+<legend>Datos Personales</legend>
+Nombre:
+<input type="text" name="nombre" size="10"><br><br>
+Dirección:
+<input type="text" name="direccion" size="10"><br><br>
+Teléfono:
+<input type="text" name="telefono" size="10"><br><br>
+</fieldset>
+</form>
+
+<fieldset style="border-color:black; width:500px;">
+    <legend>Datos Adicionales</legend>
+
+    <textarea name="comentarios" rows="5" cols="40">Ingrese aqui el motivo de su tramite</textarea><br>
+</fieldset>
+<br>
+<input  type="submit" value="Enviar" style="width:530px">
+</body>
+</html>
